@@ -1,0 +1,19 @@
+* Identicon Generator
+  This is a simple tool to create unique identicons from a string. There are
+  multiple different types of identicons which can be generated. The first type
+  is just the simple "GitHub" style icon with one color which is taken from the
+  md5 hash of the string. The second type of identicon is a simple shape created
+  by drawing lines on a canvas and then filling the shape. Finally, the third
+  type of identicon, xoricon, is a combination of three different identicons which are
+  created based off of the privided string and the current time.
+
+* Uses
+  The most basic usage of this generator is the just create a simple identicon
+  of the "GitHub" style which is done using the identicon function.
+  #+BEGIN_SRC
+  identicon(string, operation, bool);
+  #+END_SRC
+  This function takes the input string which will be turned into the identicon,
+  an operation which is the type of globalCompositeOperation that will be
+  performed on the canvas, and a bool value which determines the number of
+  colors in the identicon.
